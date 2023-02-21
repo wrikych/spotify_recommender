@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <article class="media content-section">
+        <div class="media-body">
+        <h2>Input Songs Here</h2>
+        <form method="POST", action="{{url_for('after')}}">
+            <b> Song 1 - Name :  <input type="text", name='name_1', placeholder="enter 1">  Song 1 - Year :  <input type="int", name='year_1', placeholder="enter 1"><br><br>
+                Song 2 - Name :  <input type="text", name='name_2', placeholder="enter 1">  Song 2 - Year :  <input type="int", name='year_2', placeholder="enter 1"><br><br>
+                Song 3 - Name :  <input type="text", name='name_3', placeholder="enter 1">  Song 3 - Year :  <input type="int", name='year_3', placeholder="enter 1"><br><br><br></b>
+             <input type="submit" , value='predict!' >
+         </form>
+        </div>
+    </article>
+{% endblock content %}

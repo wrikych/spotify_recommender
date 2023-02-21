@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Recommendations</h2>
+    {% for song in recs %}
+        <article>
+            <h3>{{ song.name }}</h3>
+            <small>{{ song.year }}</small>
+            <small>{{ song.artists }}</small>            
+        </article>
+    {% endfor %}
+{% endblock content %}
